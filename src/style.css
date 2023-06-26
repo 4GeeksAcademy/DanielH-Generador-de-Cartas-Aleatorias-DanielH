@@ -1,1 +1,19 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Monofett&family=Ultra&display=swap");
+body {
+  background: green;
+}
+.card-title {
+  font-family: "Ultra", serif;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+#paloIzq {
+  font-family: "Ultra", serif;
+  padding-left: 15px;
+}
+
+#paloDrch {
+  font-family: "Ultra", serif;
+  padding-right: 15px;
+}

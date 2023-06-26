@@ -4,25 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Monofett&family=Ultra&display=swap"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <div
+        class="card text-center position-absolute top-50 start-50 translate-middle rounded-3"
+        style="width: 18rem; height: 30rem;"
+      >
+        <div
+          id="paloIzq"
+          class="cardPalo position-absolute top-0 start-0 fs-1 fw-bold"
+        >
+          Aqui ira un palo
+        </div>
+        <div
+          id="cardBody"
+          class="card-body position-absolute top-50 start-50 translate-middle"
+        >
+          <h5 class="card-title fs-1 fw-bold">
+            Tratamiento especial del título
+          </h5>
+        </div>
+        <div
+          id="paloDrch"
+          class="cardPalo position-absolute bottom-0 end-0 fs-1 fw-bold"
+        >
+          Aqui ira un palo
+        </div>
       </div>
     </div>
   </body>

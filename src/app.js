@@ -2,10 +2,48 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+
+  function generadedPalos() {
+    const suits = ["♦", "♥", "♠", "♣"];
+
+    let suitRandom = Math.floor(Math.random() * suits.length);
+    return suits[suitRandom];
+  }
+  function generadedNumber() {
+    const cardValue = [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "J",
+      "Q",
+      "K",
+      "A"
+    ];
+    let numberRandom = Math.floor(Math.random() * cardValue.length);
+
+    return cardValue[numberRandom];
+  }
+
+  console.log(generadedNumber());
+  console.log(generadedPalos());
+
+  let suitResult = generadedPalos();
+
+  let suitCards = document.querySelectorAll(".cardPalo");
+  suitCards.forEach(element => {
+    element.innerHTML = suitResult;
+  });
+
+  let numberResult = generadedNumber();
+
+  let numberCards = document.querySelector(".card-title");
+  numberCards.innerHTML = numberResult;
 };
