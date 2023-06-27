@@ -41,6 +41,7 @@ window.onload = function() {
   suitCards.forEach(element => {
     element.innerHTML = suitResult;
   });
+  let selectColorSuit = fun;
 
   let numberResult = generadedNumber();
 
