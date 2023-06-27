@@ -5,15 +5,17 @@ body {
 }
 .card-title {
   font-family: "Ultra", serif;
-  font-size: xx-large;
+  font-size: 125px;
   font-weight: bolder;
 }
 #paloIzq {
   font-family: "Ultra", serif;
   padding-left: 15px;
+  font-size: 70px;
 }
 
 #paloDrch {
   font-family: "Ultra", serif;
   padding-right: 15px;
+  font-size: 70px;
 }
