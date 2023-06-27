@@ -13,6 +13,7 @@
   </head>
   <body>
     <div class="container-fluid text-center">
+      <!-- card -->
       <div
         class="card text-center position-absolute top-50 start-50 translate-middle rounded-3 border-2 border-warning"
         style="width: 18rem; height: 30rem;"
@@ -31,6 +32,50 @@
         <div id="paloDrch" class="cardPalo position-absolute bottom-0 end-0 ">
           Aqui ira un palo
         </div>
+      </div>
+      <!-- boton new card -->
+      <div
+        class="btn-group"
+        role="group"
+        aria-label="Basic mixed styles example"
+      >
+        <button id="btn" type="button" class="btn btn-danger mt-4 ">
+          Nueva carta
+        </button>
+      </div>
+      <!-- inputs altura y ancho -->
+      <div id="input1" class="input-group mb-3">
+        <button
+          class="btn btn-outline-warning"
+          type="button"
+          id="button-addon1"
+        >
+          Anchura
+        </button>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="valor numerico"
+          aria-label=""
+          aria-describedby="button-addon1"
+        />
+      </div>
+
+      <div id="input2" class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="valor numerico"
+          aria-label=""
+          aria-describedby="button-addon2"
+        />
+        <button
+          class="btn btn-outline-warning"
+          type="button"
+          id="button-addon2"
+        >
+          Altura
+        </button>
       </div>
     </div>
   </body>

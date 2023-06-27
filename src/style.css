@@ -19,3 +19,12 @@ body {
   padding-right: 15px;
   font-size: 70px;
 }
+
+#input1,
+#input2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 250px;
+  margin: 26px 0 0 250px;
+}

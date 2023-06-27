@@ -46,4 +46,6 @@ window.onload = function() {
 
   let numberCards = document.querySelector(".card-title");
   numberCards.innerHTML = numberResult;
+  let newCard = document.querySelector("#btn");
+  newCard.addEventListener("click", window.onload);
 };
