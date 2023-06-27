@@ -1,5 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Monofett&family=Ultra&display=swap");
+
 body {
   background: green;
 }
@@ -11,13 +12,14 @@ body {
 #paloIzq {
   font-family: "Ultra", serif;
   padding-left: 15px;
-  font-size: 70px;
+  font-size: 90px;
 }
 
-#paloDrch {
+.palo-espejo {
   font-family: "Ultra", serif;
   padding-right: 15px;
-  font-size: 70px;
+  font-size: 90px;
+  transform: scaleY(-1);
 }
 
 #input1,
