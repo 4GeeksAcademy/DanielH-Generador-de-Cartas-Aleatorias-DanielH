@@ -5,10 +5,6 @@ body {
   background: green;
 }
 
-.card {
-  transition: width 0.3s, height 0.3s; /* Animación de transición */
-}
-
 .card-title {
   font-family: "Ultra", serif;
   font-size: 125px;
@@ -27,15 +23,24 @@ body {
   transform: scaleY(-1);
 }
 
-#input1,
-#input2 {
+#formulario {
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 250px;
   margin: 430px 0 0 800px;
 }
+#anchuraYAltura {
+  margin: 5px;
+}
+#anchuraYAltura2 {
+  margin: 5px;
+}
 
 #botonNewCard {
   margin: 300px 0 0 0;
+}
+
+#btnEnviar {
+  margin-top: 15px;
 }

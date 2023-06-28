@@ -19,6 +19,7 @@
       </div>
       <!-- card -->
       <div
+        id="carTotal"
         class="card text-center position-absolute top-50 start-50 translate-middle rounded-3 border-2 border-warning"
         style="width: 18rem; height: 30rem;"
       >
@@ -52,43 +53,26 @@
         </button>
       </div>
       <!-- inputs altura y ancho -->
-      <div id="input1" class="input-group mb-3">
-        <!-- boton Anchura -->
-        <button
-          id="btnAnchura"
-          class="btn btn-outline-warning"
-          type="button"
-          id="button-addon1"
-        >
-          Anchura
-        </button>
-        <input
-          type="number"
-          class="form-control"
-          placeholder="valor numerico"
-          aria-label=""
-          aria-describedby="button-addon1"
-        />
-      </div>
+      <form id="formulario">
+        <div id="anchuraYAltura" class="mb-3">
+          <label for="height" class="form-label">Altura</label>
+          <input
+            type="number"
+            class="form-control"
+            id="height"
+            aria-describedby="emailHelp"
+          />
+        </div>
 
-      <div id="input2" class="input-group mt-3">
-        <!-- Boton Altura -->
-        <input
-          type="number"
-          class="form-control"
-          placeholder="valor numerico"
-          aria-label=""
-          aria-describedby="button-addon2"
-        />
-        <button
-          id="btnAltura"
-          class="btn btn-outline-warning"
-          type="button"
-          id="button-addon2"
-        >
-          Altura
+        <div id="anchuraYAltura2" class="mb-3">
+          <label for="width" class="form-label">Anchura</label>
+          <input type="number" class="form-control" id="width" />
+        </div>
+        <div class="mb-3 form-check"></div>
+        <button id="btnEnviar" type="submit" class="btn btn-primary">
+          Enviar
         </button>
-      </div>
+      </form>
     </div>
   </body>
 </html>

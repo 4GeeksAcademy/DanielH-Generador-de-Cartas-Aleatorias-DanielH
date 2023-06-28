@@ -63,6 +63,10 @@ window.onload = function() {
 
   const secondsSpan = document.querySelector("#seconds");
 
+  setTimeout(() => {
+    generateCard();
+  }, 10000);
+
   function countdown(seconds) {
     secondsSpan.innerHTML = `Segundos para nueva carta: ${seconds}`;
 
@@ -71,11 +75,26 @@ window.onload = function() {
 
       if (seconds === 0) {
         clearInterval(timer);
-        generateCard();
+        countdown(10);
       } else {
         secondsSpan.innerHTML = `Segundos para nueva carta: ${seconds}`;
       }
     }, 1000);
   }
   countdown(10);
+
+  const form = document.getElementById("formulario");
+
+  form.addEventListener("submit", event => {
+    event.preventDefault();
+    const alturaInput = document.getElementById("height");
+    const anchuraInput = document.getElementById("width");
+    const card = document.getElementById("carTotal");
+
+    const nuevaAltura = alturaInput.value;
+    const nuevaAnchura = anchuraInput.value;
+
+    card.style.height = `${nuevaAltura}px`;
+    card.style.width = `${nuevaAnchura}px`;
+  });
 };
