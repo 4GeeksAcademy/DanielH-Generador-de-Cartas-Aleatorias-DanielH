@@ -60,4 +60,22 @@ window.onload = function() {
 
   let newCard = document.querySelector("#btn");
   newCard.addEventListener("click", generateCard);
+
+  const secondsSpan = document.querySelector("#seconds");
+
+  function countdown(seconds) {
+    secondsSpan.innerHTML = `Segundos para nueva carta: ${seconds}`;
+
+    const timer = setInterval(() => {
+      seconds--;
+
+      if (seconds === 0) {
+        clearInterval(timer);
+        generateCard();
+      } else {
+        secondsSpan.innerHTML = `Segundos para nueva carta: ${seconds}`;
+      }
+    }, 1000);
+  }
+  countdown(10);
 };

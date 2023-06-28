@@ -12,7 +12,11 @@
     />
   </head>
   <body>
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center float-sm-start">
+      <!-- Cuenta regresiva -->
+      <div class="container-fluid text-center float-sm-start">
+        <span id="seconds">Segundos para nueva carta. Buena suerte!</span>
+      </div>
       <!-- card -->
       <div
         class="card text-center position-absolute top-50 start-50 translate-middle rounded-3 border-2 border-warning"
@@ -38,6 +42,7 @@
       </div>
       <!-- boton new card -->
       <div
+        id="botonNewCard"
         class="btn-group"
         role="group"
         aria-label="Basic mixed styles example"
@@ -50,7 +55,7 @@
       <div id="input1" class="input-group mb-3">
         <!-- boton Anchura -->
         <button
-          id="btn Anchura"
+          id="btnAnchura"
           class="btn btn-outline-warning"
           type="button"
           id="button-addon1"
@@ -58,7 +63,7 @@
           Anchura
         </button>
         <input
-          type="text"
+          type="number"
           class="form-control"
           placeholder="valor numerico"
           aria-label=""
@@ -66,10 +71,10 @@
         />
       </div>
 
-      <div id="input2" class="input-group mb-3">
+      <div id="input2" class="input-group mt-3">
         <!-- Boton Altura -->
         <input
-          type="text"
+          type="number"
           class="form-control"
           placeholder="valor numerico"
           aria-label=""
