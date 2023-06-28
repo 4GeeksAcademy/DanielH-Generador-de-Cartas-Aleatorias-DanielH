@@ -63,7 +63,7 @@ window.onload = function() {
 
   const secondsSpan = document.querySelector("#seconds");
 
-  setTimeout(() => {
+  setInterval(function() {
     generateCard();
   }, 10000);
 
